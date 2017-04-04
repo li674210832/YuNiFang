@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_goodsdetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+       >
+        <ImageView
+            android:id="@+id/back_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back_normal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:id="@+id/ll"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:text="商品详情"/>
+      </LinearLayout>
+        <ImageView
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share_normal"
+            android:layout_gravity="center_vertical"
+                android:layout_marginLeft="290dp"
+            />
+
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/fl"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:id="@+id/good_vp_gallery">
+            </android.support.v4.view.ViewPager>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:id="@+id/good_lin"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/goo_efficacy"/>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/goo_goods_name"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#f00"
+                    android:id="@+id/good_shop_price"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#b6abab"
+                    android:id="@+id/good_market_price"/>
+            </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:background="@drawable/bbb"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/good_tit1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_vertical"
+                   android:padding="5dp"
+                   android:text="实付满49元包邮"/>
+           </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/bbb"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:id="@+id/good_tit12"
+                    android:text="实付满49元包邮"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/bbb"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:id="@+id/good_tit13"
+                    android:text="实付满49元包邮"/>
+            </LinearLayout>
+           <ListView
+               android:id="@+id/lv_gg"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           </ListView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="30dp"
+         android:gravity="center_vertical"
+         android:src="@drawable/public_contact_service_icon"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:textSize="17dp"
+        android:text="客服"/>
+      <LinearLayout
+          android:id="@+id/shoppcar"
+          android:layout_width="120dp"
+          android:layout_height="38dp"
+          android:layout_marginLeft="30dp"
+          android:background="#ffc400"
+          android:gravity="center"
+          android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="加入购物车"/>
+      </LinearLayout>
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:text="立即购买"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bhui"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="10dp" />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="36dp"
+      android:background="@drawable/bbb"
+      android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/shap"
+        android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/class_img"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_search"/>
+    <EditText
+        android:padding="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_shopp"
+        android:hint="请输入商品名称"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="搜索"
+        android:layout_marginLeft="20dp"
+      android:gravity="center_vertical"
+        android:id="@+id/class_find"
+        android:padding="5dp"
+        android:textColor="#dfff0000"/>
+  </LinearLayout>
+  <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+      android:id="@+id/pulltoRefreshScrollview_class"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/class_lin_scr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+  </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="16dp"
+            android:background="#00ff08"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:text="商品分类"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/classimg_h1"
+            android:src="@drawable/efficacy"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/classimg_h2"
+            android:src="@drawable/eshuxing"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/classimg_h3"
+            android:src="@drawable/skin"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="16dp"
+            android:background="#ff9d00"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:text="热门分类"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="补水保湿"
+            android:gravity="center"
+            android:id="@+id/class_tv1"
+            android:background="@drawable/bbb"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="美白提亮"
+            android:gravity="center"
+            android:id="@+id/class_tv2"
+            android:background="@drawable/bbb"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="实惠套装"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:background="@drawable/bbb"
+            android:id="@+id/class_tv3"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="贴式面膜"
+            android:gravity="center"
+            android:id="@+id/class_tv4"
+            android:background="@drawable/bbb"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="控油祛痘"
+            android:gravity="center"
+            android:id="@+id/class_tv5"
+            android:background="@drawable/bbb"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="洁面乳"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:background="@drawable/bbb"
+            android:id="@+id/class_tv6"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="16dp"
+            android:background="#ff00dd"
+            android:layout_height="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:text="热销商品"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/class_recy1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

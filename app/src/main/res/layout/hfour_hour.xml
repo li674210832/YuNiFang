@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:id="@+id/four_lin"
+    android:layout_width="170dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/fang"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:id="@+id/four_goodimg"/>
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/four_efficacy"/>
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:textColor="#b6abab"
+        android:id="@+id/four_goods_name"/>
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_marginLeft="8dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#f00"
+          android:id="@+id/four_shop_price"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#b6abab"
+            android:id="@+id/four_market_price"/>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

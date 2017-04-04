@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:orientation="vertical"
+    tools:context=".u.activity.Main2Activity">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+     <RadioButton
+         android:id="@+id/b_home"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:button="@null"
+         android:text="首页"
+         android:textSize="10dp"
+         android:drawableTop="@drawable/bottom_tab_home_selected_pess"
+         android:textColor="@drawable/bottom_textcolor_selected"
+         android:drawablePadding="3dp"
+         android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/b_cassify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="分类"
+            android:textSize="10dp"
+            android:drawableTop="@drawable/bottom_cassify_selected_pess"
+            android:textColor="@drawable/bottom_textcolor_selected"
+            android:drawablePadding="3dp"
+            android:gravity="center"/>
+
+
+    <RadioButton
+        android:id="@+id/b_shopp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:text="购物车"
+        android:textSize="10dp"
+        android:drawableTop="@drawable/bottom_shopp_selected_pess"
+        android:textColor="@drawable/bottom_textcolor_selected"
+        android:drawablePadding="3dp"
+        android:gravity="center"/>
+    <RadioButton
+        android:id="@+id/b_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:text="个人中心"
+        android:textSize="10dp"
+        android:drawableTop="@drawable/bottom_user_selected_pess"
+        android:textColor="@drawable/bottom_textcolor_selected"
+        android:drawablePadding="3dp"
+        android:gravity="center"/>
+    </RadioGroup>
+</LinearLayout>
